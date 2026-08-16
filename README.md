@@ -193,6 +193,8 @@ class Parth:
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
-      src="https://raw.githubusercontent.com/parthjaina2107/ParthJaina2107/output/github-snake.svg">
-  </picture>
+   ## 🐍 My Contributions
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/parthjaina2107/ParthJaina2107/output/github-snake.svg" alt="GitHub Contribution Snake">
 </p>
