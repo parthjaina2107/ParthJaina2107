@@ -1,0 +1,99 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dot grid pattern -->
+    <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.7" fill="#21262d"/>
+    </pattern>
+    <!-- Subtle vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.4"/>
+    </radialGradient>
+    <!-- Scan line -->
+    <linearGradient id="scanline" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
+  
+  <!-- Dot grid overlay -->
+  <rect width="100%" height="100%" fill="url(#dotgrid)" rx="6"/>
+  
+  <!-- Vignette overlay -->
+  <rect width="100%" height="100%" fill="url(#vignette)" rx="6"/>
+  
+  <!-- Top border accent -->
+  <rect x="0" y="0" width="900" height="1" fill="#30363d" rx="0"/>
+  
+  <!-- Terminal window dots -->
+  <circle cx="28" cy="22" r="5.5" fill="#ff5f57"/>
+  <circle cx="48" cy="22" r="5.5" fill="#febc2e"/>
+  <circle cx="68" cy="22" r="5.5" fill="#28c840"/>
+  
+  <!-- Terminal title bar text -->
+  <text x="450" y="26" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace" font-size="11" fill="#484f58" text-anchor="middle" font-weight="500">parth@github:~</text>
+  
+  <!-- Title bar separator -->
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#21262d" stroke-width="1"/>
+  
+  <!-- Left vertical accent line -->
+  <rect x="55" y="72" width="2.5" height="50" fill="#ffffff" rx="1.25" opacity="0.15"/>
+  
+  <!-- Main name - PARTH -->
+  <text x="78" y="112" font-family="'Segoe UI', 'SF Pro Display', system-ui, -apple-system, sans-serif" font-size="62" font-weight="800" fill="#e6edf3" letter-spacing="-2">PARTH</text>
+  
+  <!-- Animated blinking cursor -->
+  <rect x="298" y="78" width="3" height="40" fill="#e6edf3" rx="1.5">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite" keyTimes="0;0.5;0.5001;1"/>
+  </rect>
+
+  <!-- Ellipsis dots as separator -->
+  <circle cx="340" cy="98" r="2" fill="#484f58"/>
+  <circle cx="356" cy="98" r="2" fill="#484f58"/>
+  <circle cx="372" cy="98" r="2" fill="#484f58"/>
+  
+  <!-- Subtitle -->
+  <text x="78" y="148" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="13" fill="#8b949e" letter-spacing="0.8">AI Engineer  ·  ML Researcher  ·  Student</text>
+
+  <!-- Decorative prompt line -->
+  <text x="78" y="178" font-family="'SF Mono', 'Cascadia Code', 'Consolas', monospace" font-size="12" fill="#484f58">
+    <tspan fill="#6e7681">$</tspan> echo "building things that think"
+  </text>
+
+  <!-- Right-side decorative code snippet -->
+  <g opacity="0.18">
+    <text x="620" y="78" font-family="'Consolas', 'SF Mono', monospace" font-size="11" fill="#c9d1d9">class Life:</text>
+    <text x="640" y="96" font-family="'Consolas', 'SF Mono', monospace" font-size="11" fill="#c9d1d9">code = True</text>
+    <text x="640" y="114" font-family="'Consolas', 'SF Mono', monospace" font-size="11" fill="#c9d1d9">learn = "always"</text>
+    <text x="640" y="132" font-family="'Consolas', 'SF Mono', monospace" font-size="11" fill="#c9d1d9">build = "∞"</text>
+    <text x="640" y="150" font-family="'Consolas', 'SF Mono', monospace" font-size="11" fill="#c9d1d9">sleep = None</text>
+  </g>
+
+  <!-- Right-side floating particles -->
+  <circle cx="820" cy="70" r="1.5" fill="#30363d">
+    <animate attributeName="cy" values="70;60;70" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="850" cy="110" r="1" fill="#30363d">
+    <animate attributeName="cy" values="110;100;110" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="870" cy="150" r="1.5" fill="#30363d">
+    <animate attributeName="cy" values="150;140;150" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="170" r="1" fill="#30363d">
+    <animate attributeName="cy" values="170;162;170" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Bottom border -->
+  <rect x="0" y="219" width="900" height="1" fill="#30363d"/>
+  
+  <!-- Version tag -->
+  <text x="872" y="24" font-family="'SF Mono', 'Consolas', monospace" font-size="10" fill="#30363d" text-anchor="end">v2026</text>
+</svg>
